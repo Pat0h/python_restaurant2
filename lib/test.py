@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from main import Restaurant, Customer, Review, Base
 
 # Establish a connection to the database
-engine = create_engine('sqlite:///your_database_name.db')
+engine = create_engine('sqlite:///restaurants.db')
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
