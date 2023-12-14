@@ -9,7 +9,6 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 # Test your methods here using SQLAlchemy queries and relationships
-# For example:
 first_customer = session.query(Customer).first()
 print("Customer's full name:", first_customer.full_name())
 print("Customer's favorite restaurant:", first_customer.favorite_restaurant())
